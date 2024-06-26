@@ -23,3 +23,19 @@ let school : TSchool = {
     name: "Usama",
     id : 1
 }
+
+// ENUMS 
+
+type TCoffeeType1 = 'Latte' | 'Mocha' | 'Americano'
+const coffeeOrder1 : TCoffeeType1 = 'Latte';
+
+enum TCoffeeType2 {
+    latte = 'latte',
+    mocha = 'mocha',
+    americano = 'americano',
+}
+const coffeeOrder2 : TCoffeeType2 = TCoffeeType2.americano;
+console.log(coffeeOrder1);
+console.log(coffeeOrder2);
+
+// Assignment (Difference between Enums and Type Literals)
